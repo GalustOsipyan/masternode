@@ -1,0 +1,20 @@
+@import "../../scss/variables";
+
+.Sidenav {
+  width: 13.65%;
+  background: $bg-main-color;
+  height: 100vh;
+
+  &__logo-section {
+    background: #1C3B4D;
+    padding: 15px 0 18px 17px;
+
+    h3 {
+      font-size: 18px;
+      margin-left: 9px;
+      color: #fff !important;
+      font-family: Rubik-Regular, sans-serif;
+      letter-spacing: 0.09em;
+    }
+  }
+}
