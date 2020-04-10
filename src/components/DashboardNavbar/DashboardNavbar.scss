@@ -1,0 +1,43 @@
+@import "../../scss/variables";
+
+.DashboardNavbar {
+  height: 77px;
+  background: #fff;
+  border: 1px solid #CAD2DA;
+  padding: 0 17px;
+
+  .currency-info-wrap {
+    width: 52%;
+
+    .quantity {
+      color: $orange;
+      font-family: Saira-SemiCondensed-Regular, sans-serif;
+      font-weight: bold;
+      font-size: 28px;
+      letter-spacing: 0.05em;
+    }
+
+    .info {
+      margin-left: 10px;
+
+      h3 {
+        text-transform: uppercase;
+        font-family: Rubik-Regular, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.09em;
+      }
+
+      h5 {
+        font-family: Rubik-Regular, sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 0.09em;
+        background: -webkit-linear-gradient(#1C366D, #285EB6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+}

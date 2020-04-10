@@ -1,13 +1,14 @@
 @import "../../scss/variables";
 
 .Sidenav {
-  width: 13.65%;
+  width: 262px;
   background: $bg-main-color;
   height: 100vh;
+  position: relative;
 
   &__logo-section {
     background: #1C3B4D;
-    padding: 15px 0 18px 17px;
+    padding: 15px 0 15px 17px;
 
     h3 {
       font-size: 18px;
@@ -15,6 +16,98 @@
       color: #fff !important;
       font-family: Rubik-Regular, sans-serif;
       letter-spacing: 0.09em;
+
+    }
+  }
+
+  nav {
+    a {
+      padding: 17px 0 17px 60px;
+      text-transform: uppercase;
+      color: #C8D6D4 !important;
+      font-size: 14px;
+      font-family: Rubik-Regular, sans-serif;
+      letter-spacing: 0.12em;
+      font-style: normal;
+      position: relative;
+
+      &:hover {
+
+        color: #fff !important;
+      }
+
+      &:first-child {
+        background: url(../../assets/icons/masterndoe-rank-icon.png) no-repeat 23px 50%;
+
+        &:hover {
+          background: url(../../assets/icons/masternode-rank-icon-gradient.png) 23px 50%, url(../../assets/images/sidenav-arrow.svg) 100%;
+          background-color: #1C2C30;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &:nth-child(2) {
+        background: url(../../assets/icons/shared-masternode-icon.png) no-repeat 23px 50%;
+
+        &:hover {
+          background: url(../../assets/icons/shared-masternode-icon-gradient.png) 23px 50%, url(../../assets/images/sidenav-arrow.svg) 100%;
+          background-color: #1C2C30;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &:nth-child(3) {
+        background: url(../../assets/icons/masternode-hosting-icon.png) no-repeat 23px 50%;
+
+        &:hover {
+          background: url(../../assets/icons/masternode-hosting-icon.png) 23px 50%, url(../../assets/images/sidenav-arrow.svg) 100%;
+          background-color: #1C2C30;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &:nth-child(4) {
+        background: url(../../assets/icons/faq-icon.png) no-repeat 23px 50%;
+
+        &:hover {
+          background: url(../../assets/icons/faq-icon-gradient.png) 23px 50%, url(../../assets/images/sidenav-arrow.svg) 100%;
+          background-color: #1C2C30;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+  }
+
+  &__bottom-navigation {
+    position: absolute;
+    bottom: 19px;
+    left: 25px;
+
+    .our-prices {
+      border: 1px solid #C8D6D4;
+      border-radius: 20px;
+      color: #C8D6D4;
+      font-family: Roboto-Regular, sans-serif;
+      letter-spacing: 0.09em;
+      font-size: 12px;
+      width: 108px;
+      height: 33px;
+    }
+
+    .social-links {
+      margin-top: 15px;
+
+      a {
+        width: 19px;
+        height: 19px;
+        border-radius: 100px;
+        background: #355362;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+      }
     }
   }
 }
