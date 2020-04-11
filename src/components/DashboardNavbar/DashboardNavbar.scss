@@ -7,7 +7,8 @@
   padding: 0 17px;
 
   .currency-info-wrap {
-    width: 52%;
+    max-width: 870px;
+    width: 100%;
 
     .quantity {
       color: $orange;
@@ -33,7 +34,7 @@
         font-size: 13px;
         font-weight: bold;
         letter-spacing: 0.09em;
-        background: -webkit-linear-gradient(#1C366D, #285EB6);
+        background: -webkit-linear-gradient(#285EB6, #1C366D);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }

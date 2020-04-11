@@ -1,9 +1,11 @@
 import React from 'react';
 import './DashboardNavbar.scss';
+import { SigninSignupButtons } from '../SigninSignupButtons';
+import { NavbarRightContentOnSignup } from '../NavbarRightContentOnSignup';
 
 export const DashboardNavbar = () => {
   return (
-    <div className='DashboardNavbar d-flex align-items-center'>
+    <div className='DashboardNavbar d-flex align-items-center justify-content-between'>
 
       <div className='currency-info-wrap d-flex justify-content-between'>
         <div className="hosted-masternodes d-flex align-items-center">
@@ -36,6 +38,10 @@ export const DashboardNavbar = () => {
           </div>
         </div>
       </div>
+
+      {/*<SigninSignupButtons/>*/ }
+
+      <NavbarRightContentOnSignup/>
 
     </div>
   );

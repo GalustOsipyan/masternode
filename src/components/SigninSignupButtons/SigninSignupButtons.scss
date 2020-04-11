@@ -1,0 +1,27 @@
+.SigninSignupButtons {
+
+  a {
+    color: #1F3A32;
+    font-family: Roboto-Regular, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.09em;
+
+    &:first-child {
+      margin-right: 22px;
+    }
+
+    &:last-child {
+      width: 122px;
+      height: 37px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #1F3A32;
+      border-radius: 20px;
+
+      img {
+        margin-right: 5px;
+      }
+    }
+  }
+}
