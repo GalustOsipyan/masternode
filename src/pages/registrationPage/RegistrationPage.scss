@@ -1,0 +1,26 @@
+.RegistrationPage-content {
+  max-width: 407px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 109px;
+  border: 1px solid white;
+
+  &__heading {
+    color: #C8D6D4;
+    font-family: Rubik-Regular, sans-serif;
+
+    img {
+      margin-bottom: 20px;
+    }
+
+    h1, h2 {
+      font-size: 18px !important;
+      letter-spacing: 0.09em;
+    }
+
+    h1 {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+  }
+}

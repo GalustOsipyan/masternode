@@ -39,9 +39,9 @@ export const DashboardNavbar = () => {
         </div>
       </div>
 
-      {/*<SigninSignupButtons/>*/ }
+      <SigninSignupButtons/>
 
-      <NavbarRightContentOnSignup/>
+      {/*<NavbarRightContentOnSignup/>*/ }
 
     </div>
   );

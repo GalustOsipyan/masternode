@@ -1,5 +1,5 @@
 .SearchInput {
-  padding: 12px 0 0 18px;
+  padding: 12px 0 0 0;
 
   label {
     max-width: 526px;
@@ -15,7 +15,7 @@
       background: url(../../assets/icons/search-icon.png);
       position: absolute;
       left: 8px;
-      top: 4px;
+      top: 6px;
     }
 
     input {
@@ -23,7 +23,7 @@
       height: 33px;
       border: 1px solid #CAD2DA;
       border-radius: 20px;
-      padding: 0 40px 0 40px;
+      padding: 0 24px 0 40px;
       color: #627990;
       font-family: Rubik-Regular, sans-serif;
       font-size: 13px;

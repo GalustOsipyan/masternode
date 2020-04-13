@@ -2,9 +2,14 @@
 
 .DashboardNavbar {
   height: 77px;
+  width: calc(100% - 262px);
   background: #fff;
-  border: 1px solid #CAD2DA;
+  border-bottom: 1px solid #CAD2DA;
   padding: 0 17px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99;
 
   .currency-info-wrap {
     max-width: 870px;

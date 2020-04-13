@@ -9,7 +9,7 @@ export const SigninSignupButtons = () => {
   return (
     <div className='SigninSignupButtons d-flex align-items-center'>
       <Link to='/'>Sign In</Link>
-      <Link to='/'>
+      <Link to='/registration'>
         <Img src={ SignupIcon } alt={ 'sign up button\'s icon' }/>
         Sign Up
       </Link>

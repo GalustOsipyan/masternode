@@ -4,6 +4,7 @@ import './SearchInput.scss';
 export const SearchInput = () => {
 
   const [value, setValue] = useState('');
+  
   const [placeholder, setPlaceholder] = useState('Search on the page...');
 
   const searchInputHandler = (e) => {

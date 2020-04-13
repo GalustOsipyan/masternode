@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 const Dashboard = lazy(() => import('./pages/dashboard/Dashboard'));
 const Home = lazy(() => import('./pages/home'));
+const RegistrationPage = lazy(() => import('./pages/registrationPage/RegistrationPage'));
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Switch>
           <Route path='/' component={ Home } exact/>
           <Route path='/dashboard/masternode-rank' component={ Dashboard }/>
+          <Route path='/registration' component={ RegistrationPage }/>
         </Switch>
       </Suspense>
     </div>
