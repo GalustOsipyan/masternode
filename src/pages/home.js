@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div>
       home
-      <NavLink to='/dashboard' className='d-block'>
+      <NavLink to='/dashboard/masternode-rank' className='d-block'>
         dashboard
       </NavLink>
     </div>

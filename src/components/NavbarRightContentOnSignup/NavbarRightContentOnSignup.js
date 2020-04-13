@@ -56,7 +56,7 @@ export const NavbarRightContentOnSignup = () => {
         </div>
       </div>
 
-      <Link to='/'>
+      <Link to='/' className='d-flex'>
         <Img src={ SignoutIcon } alt={ 'sign out button\'s icon' }/>
       </Link>
 

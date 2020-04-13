@@ -39,7 +39,7 @@
       &:first-child {
         background: url(../../assets/icons/masterndoe-rank-icon.png) no-repeat 23px 50%;
 
-        &:hover {
+        &:hover, &.active {
           background: url(../../assets/icons/masternode-rank-icon-gradient.png) 23px 50%, url(../../assets/images/sidenav-arrow.svg) 100%;
           background-color: #1C2C30;
           background-repeat: no-repeat;
@@ -49,7 +49,7 @@
       &:nth-child(2) {
         background: url(../../assets/icons/shared-masternode-icon.png) no-repeat 23px 50%;
 
-        &:hover {
+        &:hover, &.active {
           background: url(../../assets/icons/shared-masternode-icon-gradient.png) 23px 50%, url(../../assets/images/sidenav-arrow.svg) 100%;
           background-color: #1C2C30;
           background-repeat: no-repeat;
@@ -59,7 +59,7 @@
       &:nth-child(3) {
         background: url(../../assets/icons/masternode-hosting-icon.png) no-repeat 23px 50%;
 
-        &:hover {
+        &:hover, &.active {
           background: url(../../assets/icons/masternode-hosting-icon.png) 23px 50%, url(../../assets/images/sidenav-arrow.svg) 100%;
           background-color: #1C2C30;
           background-repeat: no-repeat;
@@ -69,7 +69,7 @@
       &:nth-child(4) {
         background: url(../../assets/icons/faq-icon.png) no-repeat 23px 50%;
 
-        &:hover {
+        &:hover, &.active {
           background: url(../../assets/icons/faq-icon-gradient.png) 23px 50%, url(../../assets/images/sidenav-arrow.svg) 100%;
           background-color: #1C2C30;
           background-repeat: no-repeat;

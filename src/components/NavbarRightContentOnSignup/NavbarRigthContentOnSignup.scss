@@ -50,6 +50,7 @@
       font-family: Roboto-Regular, sans-serif;
       font-size: 12px;
       border: 0.2px solid transparent;
+      display: flex;
 
 
       &:hover {
@@ -58,15 +59,15 @@
       }
 
       .dropdown-icon-wrap {
-        width: 14px !important;
+        width: 16px !important;
         height: 14px;
-        border: 1px solid;
-        //display: flex;
-        //align-items: center;
-        //justify-content: center;
+        display: flex;
+        align-items: flex-end;
+        margin-right: 8px;
+
 
         img {
-          display: block;
+          margin: 0 auto;
         }
       }
     }

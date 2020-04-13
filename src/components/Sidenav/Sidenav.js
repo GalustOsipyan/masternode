@@ -1,6 +1,6 @@
 import React from 'react';
 import './Sidenav.scss';
-import { NavLink, useRouteMatch } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Img } from '../UI/Img';
 import Logo from '../../assets/icons/masternode-logo.png';
 import Telegram from '../../assets/icons/telegram-icon.png';
@@ -9,8 +9,6 @@ import Twitter from '../../assets/icons/twitter-icon.png';
 
 export const Sidenav = () => {
 
-  let { path, url } = useRouteMatch();
-
   return (
     <div className='Sidenav'>
       <div className="Sidenav__logo-section d-flex align-items-center">
@@ -18,11 +16,11 @@ export const Sidenav = () => {
         <h3>Mrnodemaster</h3>
       </div>
       <nav className='d-flex flex-column'>
-        <NavLink to={ `${ url }/masternode-rank` } className='d-flex'>
+        <NavLink to='/dashboard/masternode-rank' className='d-flex'>
           masternode rank
         </NavLink>
 
-        <NavLink to='/shared-masternode'>
+        <NavLink to='/dashboard/shared-masternode'>
           shared masternode
         </NavLink>
 

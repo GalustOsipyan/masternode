@@ -10,7 +10,7 @@ function App() {
       <Suspense fallback={ <div>Loading...</div> }>
         <Switch>
           <Route path='/' component={ Home } exact/>
-          <Route path='/dashboard' component={ Dashboard }/>
+          <Route path='/dashboard/masternode-rank' component={ Dashboard }/>
         </Switch>
       </Suspense>
     </div>
