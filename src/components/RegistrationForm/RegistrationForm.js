@@ -3,7 +3,9 @@ import { ErrorMessage, Field, Form, Formik } from 'formik';
 import * as Yup from 'yup';
 import { Persist } from 'formik-persist';
 
-import { useHistory } from 'react-router-dom';
+import './RegistrationForm.scss';
+
+import { Link, useHistory } from 'react-router-dom';
 
 
 export const RegistrationForm = ({ type }) => {
@@ -17,7 +19,7 @@ export const RegistrationForm = ({ type }) => {
     <>
       <Formik
         validateOnBlur={ false }
-        initialValues={ { email: '', password: '' } }
+        initialValues={ { email: '', password: '', confirmPassword: '' } }
         validationSchema={ Yup.object({
           email: Yup.string().trim()
             .email('Invalid email address')
@@ -25,7 +27,15 @@ export const RegistrationForm = ({ type }) => {
           password: Yup.string().trim()
             .max(16, `Password can't be longer than 16 characters`)
             .min(6, `Password should be minimum 6 characters`)
-            .required('Text field is required')
+            .required('Field is required'),
+          confirmPassword: Yup.string().when('password', {
+            is: val => (!!(val && val.length > 0)),
+            then: Yup.string().oneOf(
+              [Yup.ref('password')],
+              'Both password need to be the same'
+            )
+              .required('Field is required'),
+          })
         }) }
         onSubmit={ ({ email, password },
                     { setSubmitting, resetForm, setFieldError }) => {
@@ -38,10 +48,10 @@ export const RegistrationForm = ({ type }) => {
       >
         { ({ errors, touched, isValid, handleReset }) => (
           <Form
-            className="post_add_form"
+            className="RegistrationForm"
           >
-            < div className='form-group position-relative mb-5'>
-              <label htmlFor="title_field">Email</label>
+            < div className='form-group position-relative'>
+              <label htmlFor="title_field" data-email='email'>Email address</label>
               <Field
                 id="title_field"
                 name="email"
@@ -52,8 +62,8 @@ export const RegistrationForm = ({ type }) => {
               <ErrorMessage component='div' name='email'/>
             </div>
 
-            <div className="form-group position-relative mb-5">
-              <label htmlFor="text_field">Password</label>
+            <div className="form-group position-relative">
+              <label htmlFor="text_field" data-email='password'>Password</label>
               <Field
                 id="text_field"
                 name="password"
@@ -65,16 +75,37 @@ export const RegistrationForm = ({ type }) => {
               <ErrorMessage component="div" name="password"/>
             </div>
 
-            <button
-              disabled={ !isValid }
-              type="submit"
-              className="btn btn-danger"
-            >
-              { type }
-            </button>
+            <div className="form-group position-relative">
+              <label htmlFor="text_field" data-email='password'>Confirm password</label>
+              <Field
+                id="text_field"
+                name="confirmPassword"
+                type="password"
+                className={ `form-control ${
+                  errors.password && errors.confirmPassword && touched.password
+                    ? ' is-invalid' : null }` }
+              />
+              <ErrorMessage component="div" name="confirmPassword"/>
+            </div>
+
+            <div className='registration-button-wrap d-flex justify-content-between align-items-center'>
+              <button
+                disabled={ !isValid }
+                type="submit"
+                className="btn form-button form-button--registration"
+              >
+                Create Account
+                { type }
+              </button>
+
+              <p>
+                <span>Already registered?</span>
+                <Link to='/login'>Sign In</Link>
+              </p>
+            </div>
 
 
-            <Persist name="register-form"/>
+            {/*<Persist name="register-form"/>*/ }
           </Form>
         ) }
 
