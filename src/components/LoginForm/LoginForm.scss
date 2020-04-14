@@ -1,0 +1,18 @@
+.LoginForm {
+
+  .forgot-password-link {
+    font-size: 12px;
+    color: #405B68;
+    position: absolute;
+    right: 0;
+    bottom: -23px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .form-button--login {
+    margin-bottom: 42px;
+  }
+}

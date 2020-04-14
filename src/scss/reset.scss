@@ -2,7 +2,7 @@
 
 
 body {
-  //color: $text-main-color;
+  font-family: Rubik-Regular, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -44,5 +44,9 @@ button, input {
   color: #FFFFFF;
   font-size: 14px;
   font-family: Rubik-Regular, sans-serif;
+}
+
+.form-group {
+  margin-bottom: 2rem;
 }
 

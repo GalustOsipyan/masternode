@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom';
 const Home = () => {
   return (
     <div>
-      home
-      <NavLink to='/dashboard/masternode-rank' className='d-block'>
+      <h1 className='ml-5'>Home</h1>
+      <NavLink to='/dashboard/masternode-rank' className='d-block m-5'>
         dashboard
       </NavLink>
     </div>

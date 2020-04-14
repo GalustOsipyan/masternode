@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 const Dashboard = lazy(() => import('./pages/dashboard/Dashboard'));
 const Home = lazy(() => import('./pages/home'));
 const RegistrationPage = lazy(() => import('./pages/registrationPage/RegistrationPage'));
+const LoginPage = lazy(() => import('./pages/loginPage/LoginPage'));
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path='/' component={ Home } exact/>
           <Route path='/dashboard/masternode-rank' component={ Dashboard }/>
           <Route path='/registration' component={ RegistrationPage }/>
+          <Route path='/login' component={ LoginPage }/>
         </Switch>
       </Suspense>
     </div>
