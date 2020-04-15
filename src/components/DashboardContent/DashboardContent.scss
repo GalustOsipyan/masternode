@@ -1,8 +1,9 @@
 .DashboardContent {
   background: #E5E5E5;
-  width: calc(100% - 260px);
+  width: calc(100% - 262px);
   margin-left: auto;
   padding: 77px 18px 0 18px;
+  min-height: 100vh;
 }
 
 .currency-toggle-section {

@@ -4,4 +4,15 @@
   background: $bg-main-color;
   height: 100vh;
   padding: 0 15px;
+  position: relative;
+  z-index: 999;
+
+}
+
+.page-close-button {
+  color: #fff;
+  font-size: 54px;
+  position: absolute;
+  right: 15px;
+  top: -8px;
 }

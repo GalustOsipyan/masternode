@@ -38,7 +38,7 @@
         background: url(../../assets/icons/masterndoe-rank-icon.png) no-repeat 23px 50%;
 
         &:hover {
-          background: url(../../assets/images/sidenav-arrow.svg) no-repeat 100% 100%;
+          background: url(../../assets/icons/masterndoe-rank-icon.png) no-repeat 23px 50%, url(../../assets/images/sidenav-arrow.svg) no-repeat 100% 100%;
         }
 
         &.active {
