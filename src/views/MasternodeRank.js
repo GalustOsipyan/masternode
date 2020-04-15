@@ -1,7 +1,6 @@
 import React from 'react';
 import { CurrencyToggleButtons } from '../components/CurrencyToggleButtons';
 import { SearchInput } from '../components/SearchInput';
-import { DashboardNavbar } from '../components/DashboardNavbar';
 import { DashboardLayout } from '../layouts/DashboardLayout';
 import { DashboardContent } from '../components/DashboardContent';
 
