@@ -16,11 +16,11 @@ export const Sidenav = () => {
         <h3>Mrnodemaster</h3>
       </div>
       <nav className='d-flex flex-column'>
-        <NavLink to='/dashboard/masternode-rank' className='d-flex'>
+        <NavLink to='/masternode-rank' className='d-flex'>
           masternode rank
         </NavLink>
 
-        <NavLink to='/dashboard/shared-masternode'>
+        <NavLink to='/shared-masternode'>
           shared masternode
         </NavLink>
 
@@ -34,20 +34,20 @@ export const Sidenav = () => {
       </nav>
 
       <div className="Sidenav__bottom-navigation mt-auto d-flex flex-column">
-        <a href='#' className='btn our-prices d-flex justify-content-center align-items-center'>
+        <a href='/' className='btn our-prices d-flex justify-content-center align-items-center'>
           Our Prices
         </a>
 
         <div className="social-links d-flex">
-          <a href="#">
+          <a href="/">
             <Img src={ Telegram } alt='Telegram link'/>
           </a>
 
-          <a href="#">
+          <a href="/">
             <Img src={ Facebook } alt='Facebook link'/>
           </a>
 
-          <a href="#">
+          <a href="/">
             <Img src={ Twitter } alt='Twitter link'/>
           </a>
         </div>
