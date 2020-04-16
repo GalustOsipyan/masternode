@@ -1,3 +1,70 @@
 .CurrencyInfoListItem {
+  height: 70px;
+  background: #FFFFFF;
+  border: 0.5px solid #DDE2E8;
+  box-shadow: 0 0 10px rgba(63, 77, 69, 0.1);
+  border-radius: 5px;
+  padding: 0 10px 0 13px;
 
+  .currency-logo {
+    width: 40px;
+    border: 1px solid;
+  }
+
+  .coin-name {
+    width: 14%;
+    border: 1px solid;
+  }
+
+  .ROI {
+    width: 8%;
+    border: 1px solid;
+  }
+
+  .coins-required {
+    width: 8%;
+    border: 1px solid;
+  }
+
+  .progress {
+    width: 20%;
+    border: 1px solid;
+  }
+
+  .price {
+    width: 8%;
+    border: 1px solid;
+  }
+
+  .volume {
+    width: 8%;
+    border: 1px solid;
+  }
+
+  .MN-worth {
+    width: 8%;
+    border: 1px solid;
+  }
+
+  .network-nodes {
+    width: 8%;
+    border: 1px solid;
+  }
+
+  .already-running {
+    width: 8%;
+    border: 1px solid;
+  }
+
+
+  &__heading {
+    font-size: 12px;
+    color: #2A3138;
+    margin-bottom: 6px;
+  }
+
+  &__info {
+    font-size: 12px;
+    color: #627990;
+  }
 }

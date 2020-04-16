@@ -6,7 +6,10 @@ import { FormWrapper } from '../../components/FormWrapper';
 const LoginPage = () => {
   return (
     <EmptyLayout>
-      <FormWrapper topHeading='Welcome back' bottomHading='Log in to your account to continue'>
+      <FormWrapper
+        topHeading='Welcome back'
+        bottomHading='Log in to your account to continue'
+      >
         <LoginForm/>
       </FormWrapper>
     </EmptyLayout>

@@ -3,16 +3,15 @@ import { Img } from '../../UI/Img';
 
 import './CurrencyToggleButton.scss';
 
-export const CurrencyToggleButton = ({ text, src }) => {
+export const CurrencyToggleButton = ({ text, icon }) => {
 
 
   return (
     <button
-      className='CurrencyToggleButton'
-
+      className='CurrencyToggleButton d-flex justify-content-center align-items-center'
     >
       <span>{ text }</span>
-      <Img src={ src }/>
+      <Img src={ icon }/>
     </button>
   );
 };

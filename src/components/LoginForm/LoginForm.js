@@ -85,7 +85,7 @@ export const LoginForm = ({ type }) => {
             </div>
 
 
-            {/*<Persist name="register-form"/>*/ }
+            <Persist name="login-form"/>
           </Form>
         ) }
 

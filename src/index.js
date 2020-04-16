@@ -8,16 +8,25 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Loader } from './components/Loader';
+import { createStore, applyMiddleware } from 'redux';
+import reducer from './Store/rootReducer';
+import { Provider } from 'react-redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import thunk from 'redux-thunk';
 
 const App = lazy(() => import('./App'));
 
+const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
+
 const app = (
   <React.StrictMode>
-    <Router basename='/'>
-      <Suspense fallback={ <Loader/> }>
-        <Route path='/' component={ App }/>
-      </Suspense>
-    </Router>
+    <Provider store={ store }>
+      <Router basename='/'>
+        <Suspense fallback={ <Loader/> }>
+          <Route path='/' component={ App }/>
+        </Suspense>
+      </Router>
+    </Provider>
   </React.StrictMode>
 );
 

@@ -1,37 +1,15 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import './Sidenav.scss';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { Img } from '../UI/Img';
 import Logo from '../../assets/icons/masternode-logo.png';
 import Telegram from '../../assets/icons/telegram-icon.png';
 import Facebook from '../../assets/icons/facebook-icon.png';
 import Twitter from '../../assets/icons/twitter-icon.png';
-import { useLocation } from 'react-router-dom';
 
 export const Sidenav = () => {
 
   const { pathname } = useLocation();
-
-  // const navigationLink = useRef(null);
-
-  /*
-    let urlClassName = '';
-
-    const setClassName = () => {
-
-      if (url === '/') {
-        return urlClassName = 'active';
-      }
-    };
- */
-
-  /* useEffect(() => {
-     if (pathname === '/') {
-       navigationLink.current.className = 'active';
-     }
-
-     console.log('url', pathname);
-   }, []);*/
 
 
   return (

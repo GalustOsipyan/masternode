@@ -1,7 +1,8 @@
 import React from 'react';
-import { CurrencyToggleButtons } from '../components/CurrencyToggleButtons';
+import CurrencyToggleButtons from '../components/CurrencyToggleButtons/CurrencyToggleButtons';
 import { SearchInput } from '../components/SearchInput';
 import { DashboardContent } from '../components/DashboardContent';
+import CurrencyInfoListItem from '../components/CurrencyInfoListItem/CurrencyInfoListItem';
 
 const MasternodeRank = () => {
   return (
@@ -9,11 +10,13 @@ const MasternodeRank = () => {
       <DashboardContent>
         <SearchInput/>
         <CurrencyToggleButtons/>
-        <ul>
+        {/* <ul>
           { new Array(100).fill(3).map((it, i) => (
             <li key={ i }>item { i }</li>
           )) }
-        </ul>
+        </ul>*/ }
+
+        <CurrencyInfoListItem/>
       </DashboardContent>
     </div>
   );
