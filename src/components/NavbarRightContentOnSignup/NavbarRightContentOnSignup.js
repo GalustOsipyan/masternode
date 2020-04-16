@@ -13,9 +13,9 @@ import Disable2FA from '../../assets/icons/disable2fa-icon.png';
 export const NavbarRightContentOnSignup = () => {
   return (
     <div className='NavbarRightContentOnSignup d-flex align-items-center '>
-      <div className="balance d-flex justify-content-center align-items-center">
+      <Link to='/' className="balance d-flex justify-content-center align-items-center">
         <h4>Balance: 0.00$</h4>
-      </div>
+      </Link>
 
       <div className="dropdown">
         <button className="btn dropdown-toggle user-dropdown-btn d-flex align-items-center" id="dropdownMenuButton"

@@ -6,19 +6,18 @@ import 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import * as serviceWorker from './serviceWorker';
-// import App from './App';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Loader } from './components/Loader';
 
 const App = lazy(() => import('./App'));
 
 const app = (
   <React.StrictMode>
-    <BrowserRouter>
+    <Router basename='/'>
       <Suspense fallback={ <Loader/> }>
         <Route path='/' component={ App }/>
       </Suspense>
-    </BrowserRouter>
+    </Router>
   </React.StrictMode>
 );
 

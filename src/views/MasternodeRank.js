@@ -1,12 +1,11 @@
 import React from 'react';
 import { CurrencyToggleButtons } from '../components/CurrencyToggleButtons';
 import { SearchInput } from '../components/SearchInput';
-import { DashboardLayout } from '../layouts/DashboardLayout';
 import { DashboardContent } from '../components/DashboardContent';
 
 const MasternodeRank = () => {
   return (
-    <DashboardLayout>
+    <div className='d-flex'>
       <DashboardContent>
         <SearchInput/>
         <CurrencyToggleButtons/>
@@ -16,7 +15,7 @@ const MasternodeRank = () => {
           )) }
         </ul>
       </DashboardContent>
-    </DashboardLayout>
+    </div>
   );
 };
 

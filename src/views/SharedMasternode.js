@@ -1,14 +1,13 @@
 import React from 'react';
-import { DashboardLayout } from '../layouts/DashboardLayout';
 import { DashboardContent } from '../components/DashboardContent';
 
 const SharedMasternode = () => {
   return (
-    <DashboardLayout>
+    <div className='d-flex'>
       <DashboardContent>
         <h1>Shared Masternode</h1>
       </DashboardContent>
-    </DashboardLayout>
+    </div>
   );
 };
 

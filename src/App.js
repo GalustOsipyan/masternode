@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import { Loader } from './components/Loader';
 import { Sidenav } from './components/Sidenav';
 import { DashboardNavbar } from './components/DashboardNavbar';
@@ -21,6 +21,7 @@ const App = () => (
         <Route path='/shared-masternode' component={ SharedMasternode }/>
         <Route path='/registration' component={ RegistrationPage }/>
         <Route path='/login' component={ LoginPage }/>
+        <Redirect to='/'/>
       </Switch>
     </Suspense>
   </>
