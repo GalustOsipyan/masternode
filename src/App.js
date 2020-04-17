@@ -16,12 +16,12 @@ const App = () => (
     <Sidenav/>
     <Suspense fallback={ <Loader/> }>
       <Switch>
-        <Route path='/' component={ MasternodeRank } exact/>
-        <Route path='/masternode-rank' component={ MasternodeRank }/>
-        <Route path='/shared-masternode' component={ SharedMasternode }/>
-        <Route path='/registration' component={ RegistrationPage }/>
-        <Route path='/login' component={ LoginPage }/>
-        <Redirect to='/'/>
+        <Route path={ `${ process.env.PUBLIC_URL }/` } component={ MasternodeRank } exact/>
+        <Route path={ `${ process.env.PUBLIC_URL }/masternode-rank` } component={ MasternodeRank }/>
+        <Route path={ `${ process.env.PUBLIC_URL }/shared-masternode` } component={ SharedMasternode }/>
+        <Route path={ `${ process.env.PUBLIC_URL }/registration` } component={ RegistrationPage }/>
+        <Route path={ `${ process.env.PUBLIC_URL }/login` } component={ LoginPage }/>
+        <Redirect to={ `${ process.env.PUBLIC_URL }/` }/>
       </Switch>
     </Suspense>
   </>

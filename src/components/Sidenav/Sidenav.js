@@ -23,19 +23,20 @@ export const Sidenav = () => {
           masternode rank
         </NavLink>*/ }
 
-        <NavLink to='/masternode-rank' className={ `d-flex ${ pathname === '/' ? 'active' : '' }` }>
+        <NavLink to={ `${ process.env.PUBLIC_URL }/masternode-rank` }
+                 className={ `d-flex ${ pathname === '/' ? 'active' : '' }` }>
           masternode rank
         </NavLink>
 
-        <NavLink to='/shared-masternode'>
+        <NavLink to={ `${ process.env.PUBLIC_URL }/shared-masternode` }>
           shared masternode
         </NavLink>
 
-        <NavLink to='/masternode-hosting'>
+        <NavLink to={ `${ process.env.PUBLIC_URL }/masternode-hosting` }>
           masternode hosting
         </NavLink>
 
-        <NavLink to='/faq'>
+        <NavLink to={ `${ process.env.PUBLIC_URL }/faq` }>
           faq
         </NavLink>
       </nav>

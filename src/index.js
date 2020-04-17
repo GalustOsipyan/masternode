@@ -21,9 +21,9 @@ const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
 const app = (
   <React.StrictMode>
     <Provider store={ store }>
-      <Router basename='/'>
+      <Router basename='/build'>
         <Suspense fallback={ <Loader/> }>
-          <Route path='/' component={ App }/>
+          <Route path={ `${ process.env.PUBLIC_URL }/` } component={ App }/>
         </Suspense>
       </Router>
     </Provider>

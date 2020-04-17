@@ -65,7 +65,7 @@ export const LoginForm = ({ type }) => {
               />
               <ErrorMessage component="div" name="password"/>
 
-              <Link to='/' className='forgot-password-link'>Forgot password?</Link>
+              <Link to={ `${ process.env.PUBLIC_URL }/` } className='forgot-password-link'>Forgot password?</Link>
             </div>
 
             <div className='registration-button-wrap d-flex justify-content-between flex-column'>
@@ -80,7 +80,7 @@ export const LoginForm = ({ type }) => {
 
               <p className='text-center'>
                 <span>Not registered?</span>
-                <Link to='/registration'>Create account</Link>
+                <Link to={ `${ process.env.PUBLIC_URL }/registration` }>Create account</Link>
               </p>
             </div>
 

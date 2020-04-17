@@ -13,7 +13,7 @@ import Disable2FA from '../../assets/icons/disable2fa-icon.png';
 export const NavbarRightContentOnSignup = () => {
   return (
     <div className='NavbarRightContentOnSignup d-flex align-items-center '>
-      <Link to='/' className="balance d-flex justify-content-center align-items-center">
+      <Link to={ `${ process.env.PUBLIC_URL }/` } className="balance d-flex justify-content-center align-items-center">
         <h4>Balance: 0.00$</h4>
       </Link>
 
@@ -56,7 +56,7 @@ export const NavbarRightContentOnSignup = () => {
         </div>
       </div>
 
-      <Link to='/' className='d-flex'>
+      <Link to={ `${ process.env.PUBLIC_URL }/` } className='d-flex'>
         <Img src={ SignoutIcon } alt={ 'sign out button\'s icon' }/>
       </Link>
 

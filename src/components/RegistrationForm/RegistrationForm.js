@@ -100,7 +100,7 @@ export const RegistrationForm = ({ type }) => {
 
               <p>
                 <span>Already registered?</span>
-                <Link to='/login'>Sign In</Link>
+                <Link to={ `${ process.env.PUBLIC_URL }/login` }>Sign In</Link>
               </p>
             </div>
 
