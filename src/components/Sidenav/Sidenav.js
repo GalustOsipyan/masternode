@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Sidenav.scss';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Img } from '../UI/Img';
@@ -10,6 +10,10 @@ import Twitter from '../../assets/icons/twitter-icon.png';
 export const Sidenav = () => {
 
   const { pathname } = useLocation();
+
+  useEffect(() => {
+    console.log(process.env.PUBLIC_URL);
+  });
 
 
   return (
@@ -24,7 +28,7 @@ export const Sidenav = () => {
         </NavLink>*/ }
 
         <NavLink to={ `${ process.env.PUBLIC_URL }/masternode-rank` }
-                 className={ `d-flex ${ pathname === '/' ? 'active' : '' }` }>
+                 className={ `d-flex ${ pathname === process.env.PUBLIC_URL + '/' ? 'active' : '' }` }>
           masternode rank
         </NavLink>
 

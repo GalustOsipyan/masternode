@@ -42,7 +42,7 @@ export const RegistrationForm = ({ type }) => {
 
           console.log('submitted');
 
-          push('/');
+          push(process.env.PUBLIC_URL);
 
         } }
       >

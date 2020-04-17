@@ -33,7 +33,7 @@ export const LoginForm = ({ type }) => {
 
           console.log('Logged in');
 
-          push('/dashboard/masternode-rank');
+          push(process.env.PUBLIC_URL);
 
         } }
       >

@@ -8,7 +8,7 @@ export const PageCloseButton = () => {
   return (
     <button
       className='page-close-button'
-      onClick={ () => push('/') }
+      onClick={ () => push(process.env.PUBLIC_URL) }
     >&times;</button>
 
   );
