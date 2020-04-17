@@ -1,3 +1,19 @@
+.CurrencyInfoListItem-wrap {
+  //border: 1px solid;
+
+}
+
+.collapsible-area {
+  //border: 1px solid red;
+  padding-top: 11px;
+  height: 0;
+  overflow: hidden;
+}
+
+.collapsible-area.show {
+  height: fit-content;
+}
+
 .CurrencyInfoListItem {
   height: 70px;
   background: #FFFFFF;
@@ -5,55 +21,65 @@
   box-shadow: 0 0 10px rgba(63, 77, 69, 0.1);
   border-radius: 5px;
   padding: 0 10px 0 13px;
+  cursor: pointer;
 
   .currency-logo {
     width: 40px;
-    border: 1px solid;
   }
 
   .coin-name {
     width: 14%;
-    border: 1px solid;
   }
 
   .ROI {
     width: 8%;
-    border: 1px solid;
   }
 
   .coins-required {
     width: 8%;
-    border: 1px solid;
   }
 
-  .progress {
+  .progress-bar-wrap {
     width: 20%;
-    border: 1px solid;
+    height: 38px;
+
+    h4 {
+      font-size: 12px;
+      color: #2A3138;
+    }
+
+    .progress {
+      height: 12px;
+      border-radius: 20px;
+      background: #E1E4E8;
+      margin-top: 10px;
+
+      &-bar {
+        height: 12px;
+        border-radius: 20px;
+        background: linear-gradient(95.89deg, #3BC4BC 0.34%, #98E655 99.71%);
+      }
+    }
   }
 
   .price {
     width: 8%;
-    border: 1px solid;
   }
 
   .volume {
     width: 8%;
-    border: 1px solid;
   }
 
   .MN-worth {
     width: 8%;
-    border: 1px solid;
   }
 
   .network-nodes {
     width: 8%;
-    border: 1px solid;
   }
 
   .already-running {
     width: 8%;
-    border: 1px solid;
   }
 
 
