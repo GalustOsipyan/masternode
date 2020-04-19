@@ -77,7 +77,7 @@ const CurrencyInfoListItem = ({ coinName, ROI, coinsRequired, progress, price, v
         </div>
       </div>
 
-      <div className={ `collapsible-area d-flex ${ height ? 'show' : '' }` }>
+      <div className={ `collapsible-area d-flex ${ height ? 'show' : 'show' }` }>
         <CurrencyInfoListItemCollapsibleContent/>
       </div>
 

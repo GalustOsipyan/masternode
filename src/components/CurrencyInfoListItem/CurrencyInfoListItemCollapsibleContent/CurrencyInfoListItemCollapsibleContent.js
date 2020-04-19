@@ -2,13 +2,15 @@ import React from 'react';
 import { Img } from '../../UI/Img';
 import BitcoinIconBig from '../../../assets/icons/bitcoin-icon-big.png';
 import './CurrencyInfoListItemCollapsibleContent.scss';
-import StarIcon from '../../../assets/icons/star-icon.png';
+// import StarIcon from '../../../assets/icons/star-icon.png';
+import CurrencyInfoTable from './CurrencyInfoTable/CurrencyInfoTable';
+import { connect } from 'react-redux';
 
-const CurrencyInfoListItemCollapsibleContent = () => {
+const CurrencyInfoListItemCollapsibleContent = ({ linkTablesInfo }) => {
   return (
     <div className='CurrencyInfoListItemCollapsibleContent__leftside d-flex'>
 
-      <div className='table-container d-flex flex-column align-items-center'>
+      <div className='table-logo-container d-flex flex-column align-items-center'>
         <div className="table-currency-image">
           <Img src={ BitcoinIconBig }/>
         </div>
@@ -18,112 +20,21 @@ const CurrencyInfoListItemCollapsibleContent = () => {
         </h2>
       </div>
 
-
-      <div className='table-container'>
-        <div className="table-heading-block d-flex justify-content-center align-items-center">
-          <h4>Official Links</h4>
-        </div>
-
-        <div className="table-block d-flex align-items-center">
-          <div className='table-block__icon-wrap d-flex align-items-center'>
-            <Img src={ StarIcon }/>
-          </div>
-          <p>Website</p>
-        </div>
-
-        <div className="table-block d-flex align-items-center">
-          <div className='table-block__icon-wrap d-flex align-items-center'>
-            <Img src={ StarIcon }/>
-          </div>
-          <p>Website</p>
-        </div>
-
-        <div className="table-block d-flex align-items-center">
-          <div className='table-block__icon-wrap d-flex align-items-center'>
-            <Img src={ StarIcon }/>
-          </div>
-          <p>Website</p>
-        </div>
-
-        <div className="table-block d-flex align-items-center">
-          <div className='table-block__icon-wrap d-flex align-items-center'>
-            <Img src={ StarIcon }/>
-          </div>
-          <p>Website</p>
-        </div>
-      </div>
-
-      <div className='table-container'>
-        <div className="table-heading-block d-flex justify-content-center align-items-center">
-          <h4>Official Links</h4>
-        </div>
-
-        <div className="table-block d-flex align-items-center">
-          <div className='table-block__icon-wrap d-flex align-items-center'>
-            <Img src={ StarIcon }/>
-          </div>
-          <p>Website</p>
-        </div>
-
-        <div className="table-block d-flex align-items-center">
-          <div className='table-block__icon-wrap d-flex align-items-center'>
-            <Img src={ StarIcon }/>
-          </div>
-          <p>Website</p>
-        </div>
-
-        <div className="table-block d-flex align-items-center">
-          <div className='table-block__icon-wrap d-flex align-items-center'>
-            <Img src={ StarIcon }/>
-          </div>
-          <p>Website</p>
-        </div>
-
-        <div className="table-block d-flex align-items-center">
-          <div className='table-block__icon-wrap d-flex align-items-center'>
-            <Img src={ StarIcon }/>
-          </div>
-          <p>Website</p>
-        </div>
-      </div>
-
-      <div className='table-container'>
-        <div className="table-heading-block d-flex justify-content-center align-items-center">
-          <h4>Official Links</h4>
-        </div>
-
-        <div className="table-block d-flex align-items-center">
-          <div className='table-block__icon-wrap d-flex align-items-center'>
-            <Img src={ StarIcon }/>
-          </div>
-          <p>Website</p>
-        </div>
-
-        <div className="table-block d-flex align-items-center">
-          <div className='table-block__icon-wrap d-flex align-items-center'>
-            <Img src={ StarIcon }/>
-          </div>
-          <p>Website</p>
-        </div>
-
-        <div className="table-block d-flex align-items-center">
-          <div className='table-block__icon-wrap d-flex align-items-center'>
-            <Img src={ StarIcon }/>
-          </div>
-          <p>Website</p>
-        </div>
-
-        <div className="table-block d-flex align-items-center">
-          <div className='table-block__icon-wrap d-flex align-items-center'>
-            <Img src={ StarIcon }/>
-          </div>
-          <p>Website</p>
-        </div>
-      </div>
-
+      { linkTablesInfo.map(({ heading, id, linkTableBlockInfo }) => (
+        <CurrencyInfoTable
+          key={ id }
+          link={ true }
+          heading={ heading }
+          tableBlockInfo={ linkTableBlockInfo }
+        />
+      )) }
 
     </div>
   );
 };
 
-export default CurrencyInfoListItemCollapsibleContent;
+const mapState = ({ dataReducer }) => ({
+  linkTablesInfo: dataReducer.linkTablesInfo
+});
+
+export default connect(mapState)(CurrencyInfoListItemCollapsibleContent);
