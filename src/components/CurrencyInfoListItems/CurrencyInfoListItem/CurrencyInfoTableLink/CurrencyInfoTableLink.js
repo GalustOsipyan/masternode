@@ -1,5 +1,5 @@
 import React from 'react';
-import { Img } from '../../../../UI/Img';
+import { Img } from '../../../UI/Img';
 
 const CurrencyInfoTableLink = ({ icon, text, url }) => {
   return (

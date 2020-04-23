@@ -18,17 +18,10 @@ export const Sidenav = () => {
 
   return (
     <div className='Sidenav'>
-      <div className="Sidenav__logo-section d-flex align-items-center">
-        <Img src={ Logo } alt='masternode logo'/>
-        <h3>Mrnodemaster</h3>
-      </div>
-      <nav className='d-flex flex-column'>
-        {/*  <NavLink to='/masternode-rank' className={ `d-flex ` } ref={ navigationLink }>
-          masternode rank
-        </NavLink>*/ }
 
+      <nav className='d-flex flex-column'>
         <NavLink to={ `${ process.env.PUBLIC_URL }/masternode-rank` }
-                 className={ `d-flex ${ pathname === process.env.PUBLIC_URL + '/' ? 'active' : '' }` }>
+                 className={ `d-flex ${ pathname === process.env.PUBLIC_URL ? 'active' : '' }` }>
           masternode rank
         </NavLink>
 

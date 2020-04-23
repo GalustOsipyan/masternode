@@ -2,7 +2,7 @@ import React from 'react';
 import CurrencyToggleButtons from '../components/CurrencyToggleButtons/CurrencyToggleButtons';
 import { SearchInput } from '../components/SearchInput';
 import { DashboardContent } from '../components/DashboardContent';
-import CurrencyInfoListItem from '../components/CurrencyInfoListItem/CurrencyInfoListItem';
+import CurrencyInfoListItem from '../components/CurrencyInfoListItems/CurrencyInfoListItem/CurrencyInfoListItem';
 
 const MasternodeRank = () => {
   return (

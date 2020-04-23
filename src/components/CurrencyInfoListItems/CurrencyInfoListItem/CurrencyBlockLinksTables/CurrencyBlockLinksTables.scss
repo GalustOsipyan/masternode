@@ -1,25 +1,27 @@
-.CurrencyInfoListItemCollapsibleContent {
+.CurrencyBlockLinksTable {
 
 
 }
 
-.CurrencyInfoListItemCollapsibleContent__leftside {
+.CurrencyBlockLinksTable__leftside {
   width: 50%;
   //border: 1px solid mediumvioletred;
 }
 
 
 .table-logo-container {
-  max-width: 158px;
-  width: 25%;
-  margin-right: 32px;
+  width: 24%;
   //border: 1px solid green;
 }
 
 .table-currency-name {
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   margin-top: 10px;
+
+  span {
+    display: block;
+  }
 }
 
 
