@@ -7,6 +7,7 @@ import CurrencyBlockLinksTable
   from './CurrencyBlockLinksTable/CurrencyBlockLinksTable';
 import { connect } from 'react-redux';
 import CurrencyInfoTablesBig from './CurrencyInfoTablesBig/CurrencyInfoTablesBig';
+import TableRewards from './TableRewards/TableRewards';
 
 const CurrencyInfoListItem = ({ currencyLogo, currencyInfoListItemDataLeft, progressPercent, currencyInfoListItemDataRight, specificationsData }) => {
 
@@ -55,9 +56,18 @@ const CurrencyInfoListItem = ({ currencyLogo, currencyInfoListItemDataLeft, prog
 
       </div>
 
-      <div className={ `collapsible-area d-flex ${ height ? 'show' : 'show' }` }>
-        <CurrencyBlockLinksTable/>
-        <CurrencyInfoTablesBig/>
+      <div className={ `collapsible-area ${ height ? 'show' : 'show' }` }>
+
+        <div className='collapsible-area__content-top d-flex'>
+          <CurrencyBlockLinksTable/>
+          <CurrencyInfoTablesBig/>
+        </div>
+
+        <div className='collapsible-area__content-bottom d-flex'>
+          <div className="table-content-right">
+            <TableRewards/>
+          </div>
+        </div>
 
       </div>
 
@@ -70,7 +80,6 @@ const mapState = ({ dataReducer }) => ({
   currencyInfoListItemDataLeft: dataReducer.currencyInfoListItemDataLeft,
   progressPercent: dataReducer.progressPercent,
   currencyInfoListItemDataRight: dataReducer.currencyInfoListItemDataRight,
-
 });
 
 export default connect(mapState)(CurrencyInfoListItem);

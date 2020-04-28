@@ -110,6 +110,24 @@ const initialState = {
         '135,000 BTCT (29.64%)',
       ]
     }
+  ],
+  rewardsData: [
+    {
+      id: 1, heading: 'Daily Reward',
+      dataList: ['32.268908 BTCT', '0.000073 BTC', '0.503 USD']
+    },
+    {
+      id: 2, heading: 'Weekly Reward',
+      dataList: ['225.882353 BTCT', '0.000510 BTC', '3.522 USD']
+    },
+    {
+      id: 3, heading: 'Monthly Reward',
+      dataList: ['981.512605 BTCT', '0.002218 BTC', '15.304 USD']
+    },
+    {
+      id: 4, heading: 'Yearly Reward',
+      dataList: ['11,778.151261 BTCT', '0.026619 BTC', '183.647 USD']
+    }
   ]
 };
 
