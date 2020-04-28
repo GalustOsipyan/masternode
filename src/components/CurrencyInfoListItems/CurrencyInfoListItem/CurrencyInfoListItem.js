@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './CurrencyInfoListItem.scss';
 import { Img } from '../../UI/Img';
 
-import BitcoinLogo from '../../../assets/images/bitcoin-logo.png';
 import CurrencyBlockLinksTable
   from './CurrencyBlockLinksTable/CurrencyBlockLinksTable';
 import { connect } from 'react-redux';
@@ -12,7 +11,7 @@ import TablePrice from './TablePrice/TablePrice';
 import TableMasternode from './TableMasternode/TableMasternode';
 import Chart from '../../Chart/Chart';
 
-const CurrencyInfoListItem = ({ currencyLogo, currencyInfoListItemDataLeft, progressPercent, currencyInfoListItemDataRight, specificationsData }) => {
+const CurrencyInfoListItem = ({ currencyLogo, currencyInfoListItemDataLeft, progressPercent, currencyInfoListItemDataRight }) => {
 
   const [height, setHeight] = useState(false);
 

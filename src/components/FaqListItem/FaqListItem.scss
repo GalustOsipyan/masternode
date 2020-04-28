@@ -1,0 +1,60 @@
+.FaqListItem-wrap {
+
+  .FaqListItem {
+    height: 70px;
+    background: #FFFFFF;
+    border: 0.5px solid #DDE2E8;
+    box-shadow: 0 0 10px rgba(63, 77, 69, 0.1);
+    border-radius: 5px;
+    padding: 0 10px 0 13px;
+    cursor: pointer;
+
+    h4 {
+      color: #627990;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+  .collapsible-content {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .collapsible-content.show {
+    height: fit-content;
+  }
+
+  .inner-list-item {
+    height: 70px;
+    background: #F0F0F0;
+    //box-shadow: 0 0 10px rgba(63, 77, 69, 0.1);
+    //border-radius: 5px;
+    padding: 0 10px 0 13px;
+    cursor: pointer;
+    margin-top: 5px;
+
+    h5 {
+      color: #627990;
+      font-size: 16px;
+    }
+  }
+
+  .inner-list-item-collapsible-content {
+    background: #F0F0F0;
+    height: 0;
+    overflow: hidden;
+
+    p {
+      color: #7A9ABA;
+      font-size: 14px;
+    }
+  }
+
+  .inner-list-item-collapsible-content.show {
+    height: fit-content;
+    padding: 30px 0;
+
+  }
+}
+
