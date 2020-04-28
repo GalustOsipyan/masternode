@@ -1,0 +1,22 @@
+.TableMasternode {
+  margin-top: 20px;
+
+  .CurrencyInfoTableBlock {
+    height: 35px;
+  }
+
+  .masternode-btns-wrap {
+    width: 24%;
+
+    button {
+      height: 35px;
+      background: #F8A339;
+      color: #fff;
+      font-size: 12px;
+
+      &:hover {
+        background: #EC8300;
+      }
+    }
+  }
+}

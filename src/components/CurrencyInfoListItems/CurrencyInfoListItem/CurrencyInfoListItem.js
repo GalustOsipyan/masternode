@@ -8,6 +8,9 @@ import CurrencyBlockLinksTable
 import { connect } from 'react-redux';
 import CurrencyInfoTablesBig from './CurrencyInfoTablesBig/CurrencyInfoTablesBig';
 import TableRewards from './TableRewards/TableRewards';
+import TablePrice from './TablePrice/TablePrice';
+import TableMasternode from './TableMasternode/TableMasternode';
+import Chart from '../../Chart/Chart';
 
 const CurrencyInfoListItem = ({ currencyLogo, currencyInfoListItemDataLeft, progressPercent, currencyInfoListItemDataRight, specificationsData }) => {
 
@@ -66,6 +69,12 @@ const CurrencyInfoListItem = ({ currencyLogo, currencyInfoListItemDataLeft, prog
         <div className='collapsible-area__content-bottom d-flex'>
           <div className="table-content-right">
             <TableRewards/>
+            <TablePrice/>
+            <TableMasternode/>
+          </div>
+
+          <div className="table-content-left">
+            <Chart/>
           </div>
         </div>
 

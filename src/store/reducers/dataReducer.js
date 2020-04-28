@@ -128,6 +128,38 @@ const initialState = {
       id: 4, heading: 'Yearly Reward',
       dataList: ['11,778.151261 BTCT', '0.026619 BTC', '183.647 USD']
     }
+  ],
+  priceData: [
+    {
+      id: 1, heading: 'Price',
+      dataList: ['32.268908 BTCT']
+    },
+    {
+      id: 2, heading: 'Volume',
+      dataList: ['225.882353 BTCT']
+    },
+    {
+      id: 3, heading: 'Marketcap',
+      dataList: ['981.512605 BTCT']
+    },
+    {
+      id: 4, heading: 'Change (24h)',
+      dataList: ['11,778.151261 BTCT']
+    }
+  ],
+  masternodeData: [
+    {
+      id: 1, heading: 'Shared MN #10',
+      dataList: ['Required: 10000 BTCT']
+    },
+    {
+      id: 2, heading: 'Current Fee',
+      dataList: ['19.88%']
+    },
+    {
+      id: 3, heading: 'Already running',
+      dataList: ['73 MN']
+    }
   ]
 };
 

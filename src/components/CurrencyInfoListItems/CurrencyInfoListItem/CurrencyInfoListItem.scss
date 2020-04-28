@@ -10,16 +10,16 @@
   overflow: hidden;
 
   &__content-top {
-    border: 1px solid;
   }
 
   &__content-bottom {
-    border: 1px solid;
 
     .table-content-right {
-      border: 1px solid red;
       width: 50%;
+    }
 
+    .table-content-left {
+      width: 50%;
     }
   }
 }
