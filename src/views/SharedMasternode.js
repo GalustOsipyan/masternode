@@ -1,11 +1,14 @@
 import React from 'react';
 import { DashboardContent } from '../components/DashboardContent';
+import { SearchInput } from '../components/SearchInput';
+import DataCards from '../components/DataCards/DataCards';
 
 const SharedMasternode = () => {
   return (
     <div className='d-flex'>
       <DashboardContent>
-        <h1>Shared Masternode</h1>
+        <SearchInput/>
+        <DataCards/>
       </DashboardContent>
     </div>
   );
