@@ -17,6 +17,7 @@ const MasternodeRank = () => {
         </ul>*/ }
 
         <CurrencyInfoListItem/>
+        <CurrencyInfoListItem/>
       </DashboardContent>
     </div>
   );

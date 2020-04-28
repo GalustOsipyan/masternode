@@ -58,7 +58,7 @@ const CurrencyInfoListItem = ({ currencyLogo, currencyInfoListItemDataLeft, prog
 
       </div>
 
-      <div className={ `collapsible-area ${ height ? 'show' : 'show' }` }>
+      <div className={ `collapsible-area ${ height ? 'show' : '' }` }>
 
         <div className='collapsible-area__content-top d-flex'>
           <CurrencyBlockLinksTable/>

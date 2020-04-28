@@ -20,9 +20,9 @@ export const Navbar = () => {
           <NavbarItems/>
         </div>
       </div>
-      <SigninSignupButtons/>
+      {/*<SigninSignupButtons/>*/ }
 
-      {/*<NavbarRightContentOnSignup/>*/ }
+      <NavbarRightContentOnSignup/>
 
     </div>
   );

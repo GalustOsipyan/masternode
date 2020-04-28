@@ -1,5 +1,6 @@
 import React from 'react';
 
+// This component is made for future use
 const CurrencyInfoListItems = () => {
   return (
     <>
@@ -8,6 +9,5 @@ const CurrencyInfoListItems = () => {
   );
 };
 
-const mapState = ({}) => ({});
 
 export default CurrencyInfoListItems;

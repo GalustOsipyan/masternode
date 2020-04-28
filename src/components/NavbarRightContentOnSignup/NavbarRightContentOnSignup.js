@@ -1,6 +1,6 @@
 import React from 'react';
 import './NavbarRigthContentOnSignup.scss';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 import { Img } from '../UI/Img';
 import SignoutIcon from '../../assets/icons/signout-icon.png';
 import UserAvatarIcon from '../../assets/icons/user-avatar-icon.png';
@@ -23,24 +23,24 @@ export const NavbarRightContentOnSignup = () => {
           <Img src={ UserAvatarIcon } alt='user avatar icon'/>
         </button>
         <div className="dropdown-menu user-dropdown">
-          <a className="dropdown-item" href="/">
+          <Link className="dropdown-item" to={ `${ process.env.PUBLIC_URL }/my-masternodes` }>
             <span className='dropdown-icon-wrap'>
               <Img src={ MyMasternodes } alt='my masternodes icon'/>
             </span>
             My masternodes
-          </a>
-          <a className="dropdown-item" href="/">
+          </Link>
+          <Link className="dropdown-item" to={ `/` }>
             <span className='dropdown-icon-wrap'>
               <Img src={ MyBalance } alt='my balance icon'/>
             </span>
             My balance
-          </a>
-          <a className="dropdown-item" href="/">
+          </Link>
+          <Link className="dropdown-item" to={ `${ process.env.PUBLIC_URL }/my-wallets` }>
             <span className='dropdown-icon-wrap'>
               <Img src={ MyWallets } alt='my wallets icon'/>
             </span>
             My wallets
-          </a>
+          </Link>
           <a className="dropdown-item" href="/">
             <span className='dropdown-icon-wrap'>
               <Img src={ ChangePassword } alt='change password icon'/>
