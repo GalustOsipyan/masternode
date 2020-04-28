@@ -1,5 +1,5 @@
 import React from 'react';
-import CurrencyInfoTable from '../CurrencyInfoTable/CurrencyInfoTable';
+import CurrencyLinkTable from '../CurrencyInfoTable/CurrencyLinkTable';
 import { connect } from 'react-redux';
 
 const CurrencyBlockInfoTables = ({ specificationsData }) => {
@@ -10,7 +10,7 @@ const CurrencyBlockInfoTables = ({ specificationsData }) => {
     <div className='CurrencyBlockLinksTable__leftside d-flex'>
 
       { specificationsData.map(({ heading, id, linkTableBlockInfo }) => (
-        <CurrencyInfoTable
+        <CurrencyLinkTable
           key={ id }
           link={ true }
           heading={ heading }

@@ -6,8 +6,8 @@ const CurrencyInfoTableLink = ({ icon, text, url }) => {
     <a href={ url }
        target='_blank'
        rel="noopener"
-       className="CurrencyInfoTable__block d-flex align-items-center">
-      <div className='CurrencyInfoTable__block__icon-wrap d-flex align-items-center'>
+       className="CurrencyLinkTable__block d-flex align-items-center">
+      <div className='CurrencyLinkTable__block__icon-wrap d-flex align-items-center'>
         <Img src={ icon }/>
       </div>
       <p>{ text }</p>

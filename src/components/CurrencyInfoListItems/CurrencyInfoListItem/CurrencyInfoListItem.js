@@ -3,11 +3,12 @@ import './CurrencyInfoListItem.scss';
 import { Img } from '../../UI/Img';
 
 import BitcoinLogo from '../../../assets/images/bitcoin-logo.png';
-import CurrencyBlockCollapsibleContent
-  from './CurrencyBlockLinksTables/CurrencyBlockLinksTables';
+import CurrencyBlockLinksTable
+  from './CurrencyBlockLinksTable/CurrencyBlockLinksTable';
 import { connect } from 'react-redux';
+import CurrencyInfoTablesBig from './CurrencyInfoTablesBig/CurrencyInfoTablesBig';
 
-const CurrencyInfoListItem = ({ currencyLogo, currencyInfoListItemDataLeft, progressPercent, currencyInfoListItemDataRight }) => {
+const CurrencyInfoListItem = ({ currencyLogo, currencyInfoListItemDataLeft, progressPercent, currencyInfoListItemDataRight, specificationsData }) => {
 
   const [height, setHeight] = useState(false);
 
@@ -55,9 +56,9 @@ const CurrencyInfoListItem = ({ currencyLogo, currencyInfoListItemDataLeft, prog
       </div>
 
       <div className={ `collapsible-area d-flex ${ height ? 'show' : 'show' }` }>
-        <CurrencyBlockCollapsibleContent/>
+        <CurrencyBlockLinksTable/>
+        <CurrencyInfoTablesBig/>
 
-        <CurrencyBlockCollapsibleContent/>
       </div>
 
     </div>
@@ -68,7 +69,8 @@ const mapState = ({ dataReducer }) => ({
   currencyLogo: dataReducer.currencyLogo,
   currencyInfoListItemDataLeft: dataReducer.currencyInfoListItemDataLeft,
   progressPercent: dataReducer.progressPercent,
-  currencyInfoListItemDataRight: dataReducer.currencyInfoListItemDataRight
+  currencyInfoListItemDataRight: dataReducer.currencyInfoListItemDataRight,
+
 });
 
 export default connect(mapState)(CurrencyInfoListItem);

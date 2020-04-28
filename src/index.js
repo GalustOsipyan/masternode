@@ -9,7 +9,7 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Loader } from './components/Loader';
 import { createStore, applyMiddleware } from 'redux';
-import reducer from './Store/rootReducer';
+import reducer from './store/rootReducer';
 import { Provider } from 'react-redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';

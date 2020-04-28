@@ -29,15 +29,13 @@
 
   .coin-name {
     width: 14%;
+
+    &:nth-child(3),
+    &:nth-child(4), {
+      width: 8%;
+    }
   }
 
-  .ROI {
-    width: 8%;
-  }
-
-  .coins-required {
-    width: 8%;
-  }
 
   .progress-bar-wrap {
     width: 20%;

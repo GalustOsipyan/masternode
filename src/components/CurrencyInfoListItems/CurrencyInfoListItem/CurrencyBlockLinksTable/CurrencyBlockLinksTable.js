@@ -1,10 +1,10 @@
 import React from 'react';
 import { Img } from '../../../UI/Img';
-import './CurrencyBlockLinksTables.scss';
-import CurrencyInfoTable from '../CurrencyInfoTable/CurrencyInfoTable';
+import './CurrencyBlockLinksTable.scss';
+import CurrencyLinkTable from '../CurrencyInfoTable/CurrencyLinkTable';
 import { connect } from 'react-redux';
 
-const CurrencyBlockLinksTables = ({ currencyLogoAndName: { currencyLogo, currencyName, currencyAbbreviation }, linkTablesInfo }) => {
+const CurrencyBlockLinksTable = ({ currencyLogoAndName: { currencyLogo, currencyName, currencyAbbreviation }, linkTablesInfo }) => {
 
   return (
     <div className='CurrencyBlockLinksTable__leftside d-flex'>
@@ -20,9 +20,8 @@ const CurrencyBlockLinksTables = ({ currencyLogoAndName: { currencyLogo, currenc
       </div>
 
       { linkTablesInfo.map(({ heading, id, linkTableBlockInfo }) => (
-        <CurrencyInfoTable
+        <CurrencyLinkTable
           key={ id }
-          link={ true }
           heading={ heading }
           tableBlockInfo={ linkTableBlockInfo }
         />
@@ -37,4 +36,4 @@ const mapState = ({ dataReducer }) => ({
   currencyLogoAndName: dataReducer.currencyLogoAndName,
 });
 
-export default connect(mapState)(CurrencyBlockLinksTables);
+export default connect(mapState)(CurrencyBlockLinksTable);

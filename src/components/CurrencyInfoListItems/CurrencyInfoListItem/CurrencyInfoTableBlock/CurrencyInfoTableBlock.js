@@ -1,9 +1,10 @@
 import React from 'react';
+import './CurrencyInfoTableBlock.scss';
 
 const CurrencyInfoTableBlock = ({ text, }) => {
   return (
     <div
-      className="CurrencyInfoTable__block d-flex align-items-center">
+      className="CurrencyInfoTableBlock">
       <p>{ text }</p>
     </div>
   );

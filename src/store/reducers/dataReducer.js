@@ -67,11 +67,11 @@ const initialState = {
   ],
   specificationsData: [
     {
-      coinSpecifications: {
+      bigTableData: {
         id: 1,
         heading: 'Coin specifications',
       },
-      coinSpecificationsList: [
+      specificationsDataList: [
         'Hashing algorithm',
         'Max supply',
         'Current supply',
@@ -89,11 +89,11 @@ const initialState = {
       ]
     },
     {
-      masternodeSpecifications: {
+      bigTableData: {
         id: 2,
         heading: 'Masternode Specifications',
       },
-      masternodeSpecificationsList: [
+      specificationsDataList: [
         'ROI (annual)',
         'Masternode required ',
         'Masternode worth',

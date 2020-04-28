@@ -2,7 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import { Loader } from './components/Loader';
 import { Sidenav } from './components/Sidenav';
-import { DashboardNavbar } from './components/DashboardNavbar';
+import { Navbar } from './components/Navbar';
 
 const RegistrationPage = lazy(() => import('./pages/registrationPage/RegistrationPage'));
 const LoginPage = lazy(() => import('./pages/loginPage/LoginPage'));
@@ -12,7 +12,7 @@ const SharedMasternode = lazy(() => import('./views/SharedMasternode'));
 
 const App = () => (
   <>
-    <DashboardNavbar/>
+    <Navbar/>
     <Sidenav/>
     <Suspense fallback={ <Loader/> }>
       <Switch>

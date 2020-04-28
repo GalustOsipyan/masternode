@@ -1,3 +1,13 @@
-.CurrencyInfoTableBig {
 
+.currency-info-table-wrap {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.CurrencyInfoTableBig {
+  width: 50%;
+
+  .CurrencyLinkTable__heading-block {
+    width: 100%;
+  }
 }

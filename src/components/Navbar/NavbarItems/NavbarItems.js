@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const DashboardNavbarItems = ({ navbarData }) => {
+const NavbarItems = ({ navbarData }) => {
   return (
     <>
       { navbarData.map(({ id, numberInfo, title, textInfo }) => (
@@ -23,4 +23,4 @@ const mapState = ({ dataReducer }) => ({
   navbarData: dataReducer.navbarData
 });
 
-export default connect(mapState)(DashboardNavbarItems);
+export default connect(mapState)(NavbarItems);
