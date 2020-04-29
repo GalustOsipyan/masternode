@@ -10,7 +10,7 @@ const MyMasternodes = () => {
       <DashboardContent>
         <MyMasternodeMyWalletsNavLinks/>
 
-        <h1>MyMasternodes</h1>
+        <h3 className='text-center'>You have no masternodes yet</h3>
 
       </DashboardContent>
     </div>

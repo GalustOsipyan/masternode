@@ -1,3 +1,53 @@
 .MyMasternodeMyWalletsNavLinks {
+  margin: 17px auto 0 auto;
+  max-width: 400px;
+  width: 100%;
+
+  a {
+    width: 128px;
+    height: 80px;
+    color: #627990;
+    font-size: 13px;
+    font-family: Roboto-Regular, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all 0.4s;
+
+    &:first-child {
+      background: url(../../assets/icons/my-masternodes-blue.png) no-repeat center 0;
+
+      &.active, &:hover {
+        background: url(../../assets/icons/my-masternodes-gradient.png) no-repeat center 0;
+      }
+    }
+
+    &:nth-child(2) {
+      background: url(../../assets/icons/my-wallet-blue.png) no-repeat center 0;
+
+      &.active, &:hover {
+        background: url(../../assets/icons/my-wallet-gradient.png) no-repeat center 0;
+      }
+    }
+
+    &:hover .under-line,
+    &.active .under-line {
+      width: 100%;
+      background: linear-gradient(180deg, #D08E82 33.11%, #8B38CC 158.91%);
+    }
+
+    .link-text {
+      margin-bottom: 8px;
+    }
+
+    .under-line {
+      width: 0;
+      height: 3px;
+      background: transparent;
+      border-radius: 10px;
+      transition: all 0.4s;
+    }
+  }
 
 }

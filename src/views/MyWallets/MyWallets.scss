@@ -1,3 +1,22 @@
 .MyWallets {
 
+  .wallet-activation-message {
+    margin-top: 22px;
+    width: 100%;
+    height: 78px;
+    background: #F8A339;
+    padding: 0 24px;
+    color: #2A3138;
+    font-size: 18px;
+    font-family: Roboto-Regular, sans-serif;
+
+
+    .btn {
+      width: 183px;
+      height: 47px;
+      border: 2px solid #2A3138;
+      font-size: 18px;
+      border-radius: 0;
+    }
+  }
 }
