@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './MyWallets.scss';
 import { DashboardContent } from '../../components/DashboardContent';
 import MyMasternodeMyWalletsNavLinks
@@ -6,6 +6,8 @@ import MyMasternodeMyWalletsNavLinks
 import { Button } from '../../components/UI/Button';
 
 const MyWallets = () => {
+
+
   return (
     <div className='MyWallets'>
       <DashboardContent>
@@ -17,6 +19,7 @@ const MyWallets = () => {
 
           <Button text='Activate now' classes='btn'/>
         </div>
+
 
       </DashboardContent>
     </div>

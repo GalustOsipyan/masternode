@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './MyBalance.scss';
 import { DashboardContent } from '../../components/DashboardContent';
 import WalletIconSmall from '../../assets/icons/wallet-icon-small.png';
 import { Img } from '../../components/UI/Img';
 
 const MyBalance = () => {
+
+
+  const [data] = useState([
+    { id: 1, heading: 'Date', text: '4/8/2020 3:56:10 PM' },
+    { id: 2, heading: 'Status', text: 'EXPIRED' },
+    { id: 3, heading: 'Type', text: 'Deposit' },
+    { id: 4, heading: 'Amount', text: '+ 10.00 USD' },
+    { id: 5, heading: 'Currency', text: 'QIWI' },
+    { id: 6, heading: 'Replenishment ID', text: '5e8dbbda139a3909813b0533' }
+  ]);
+
   return (
     <div className='MyBalance'>
       <DashboardContent>
@@ -41,6 +52,28 @@ const MyBalance = () => {
             Add Funds
           </button>
         </div>
+
+        <div className="transactions-history-wrap">
+          <div className="transactions-history-heading d-flex justify-content-center align-items-center">
+            <h3>Transactions history</h3>
+          </div>
+
+          <div className="transactions-history d-flex justify-content-around align-items-center">
+
+            { data.map(({ id, heading, text }) => (
+              <div
+                key={ id }
+                className="transactions-history-data d-flex flex-column align-items-center">
+                <h4>{ heading }</h4>
+                <p>{ text }</p>
+              </div>
+            )) }
+
+
+          </div>
+
+        </div>
+
       </DashboardContent>
     </div>
   );
