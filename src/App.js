@@ -10,6 +10,7 @@ const MasternodeRank = lazy(() => import('./views/MasternodeRank'));
 const SharedMasternode = lazy(() => import('./views/SharedMasternode'));
 const Faq = lazy(() => import('./views/Faq/Faq'));
 const MyMasternodes = lazy(() => import('./views/MyMasternodes/MyMasternodes'));
+const MyBalance = lazy(() => import('./views/MyBalance/MyBalance'));
 const MyWallets = lazy(() => import('./views/MyWallets/MyWallets'));
 
 
@@ -24,6 +25,7 @@ const App = () => (
         <Route path={ `${ process.env.PUBLIC_URL }/shared-masternode` } component={ SharedMasternode }/>
         <Route path={ `${ process.env.PUBLIC_URL }/faq` } component={ Faq }/>
         <Route path={ `${ process.env.PUBLIC_URL }/my-masternodes` } component={ MyMasternodes }/>
+        <Route path={ `${ process.env.PUBLIC_URL }/my-balance` } component={ MyBalance }/>
         <Route path={ `${ process.env.PUBLIC_URL }/my-wallets` } component={ MyWallets }/>
         <Route path={ `${ process.env.PUBLIC_URL }/registration` } component={ RegistrationPage }/>
         <Route path={ `${ process.env.PUBLIC_URL }/login` } component={ LoginPage }/>

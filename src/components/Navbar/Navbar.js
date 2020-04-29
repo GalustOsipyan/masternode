@@ -20,6 +20,8 @@ export const Navbar = () => {
           <NavbarItems/>
         </div>
       </div>
+
+      {/*Below are sign in and sign up buttons displayed when user is not signed in*/ }
       {/*<SigninSignupButtons/>*/ }
 
       <NavbarRightContentOnSignup/>

@@ -29,7 +29,7 @@ export const NavbarRightContentOnSignup = () => {
             </span>
             My masternodes
           </Link>
-          <Link className="dropdown-item" to={ `/` }>
+          <Link className="dropdown-item" to={ `${ process.env.PUBLIC_URL }/my-balance` }>
             <span className='dropdown-icon-wrap'>
               <Img src={ MyBalance } alt='my balance icon'/>
             </span>

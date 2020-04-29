@@ -24,6 +24,10 @@ a {
 
 .btn {
   box-shadow: none !important;
+
+  &:hover {
+    transition: all 0.4s;
+  }
 }
 
 button, input {
