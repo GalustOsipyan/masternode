@@ -74,6 +74,7 @@ const MyBalance = () => {
 
         </div>
 
+
       </DashboardContent>
     </div>
   );

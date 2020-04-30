@@ -1,0 +1,35 @@
+.ModalWindow {
+
+  .modal-dialog {
+    max-width: 603px !important;
+
+    .modal-content {
+      border-radius: 5px;
+      border: none;
+
+      .modal-header {
+        border: none;
+
+        span {
+          font-size: 32px;
+        }
+      }
+
+      .modal-footer {
+        border-top: 0;
+        padding-bottom: 46px;
+      }
+    }
+  }
+
+  .modal-submit-btn {
+    width: 305px;
+    height: 40px;
+    background: #F8A339;
+    border-radius: 0;
+    color: #fff;
+  }
+
+}
+
+
